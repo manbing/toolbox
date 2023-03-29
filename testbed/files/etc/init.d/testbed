@@ -1,0 +1,26 @@
+#!/bin/sh /etc/rc.common
+# Example script
+# Copyright (C) 2007 OpenWrt.org
+ 
+START=87
+STOP=87
+USE_PROCD=1
+
+
+start_service() {
+        procd_open_instance
+        procd_set_param command /usr/sbin/testbed
+        procd_set_param respawn
+        procd_set_param stderr 1
+        procd_set_param stdout 1
+        procd_close_instance
+}
+
+reload_service() {
+        procd_send_signal testbed
+}
+
+service_triggers()
+{
+        procd_add_reload_trigger "testbed"
+}

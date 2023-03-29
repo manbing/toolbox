@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "create /etc/config/testbed ...."
+touch /etc/config/testbed
+
+uci batch <<EOF
+set testbed.cindy=girl
+set testbed.cindy.age=35
+commit testbed
+EOF
