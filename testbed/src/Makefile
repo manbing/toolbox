@@ -3,6 +3,7 @@ SOURCES = main.c ubus.c cfg.c
 OBJS =  $(patsubst %.c,%.o, $(SOURCES))
 
 CFLAGS  += -Wall -g -Og -I./include 
+CFLAGS  += -Werror
 LDFLAGS += 
 
 #	$@ => target
