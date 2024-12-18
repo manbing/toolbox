@@ -1,0 +1,5 @@
+EXTRA_CFLAGS ?=
+CFLAGS_MODULE =
+
+obj-m := cec.o
+cec-objs := main.o
