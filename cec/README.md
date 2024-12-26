@@ -42,5 +42,7 @@ Linux kernel had provided convenient API to get current execution context.
 Developer should figure out where the code go, before modification.
 
 [1] [Interrupts and Interrupt Handling. Part 6.](https://0xax.gitbooks.io/linux-insides/content/Interrupts/linux-interrupts-6.html)
+
 [2] [Preemptive](https://stackoverflow.com/questions/40204506/what-is-the-difference-between-nonpreemptive-and-preemptive-kernels-when-switch)
+
 [3] [The x86 NMI iret problem](https://lwn.net/Articles/484932/)
